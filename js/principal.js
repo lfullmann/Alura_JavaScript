@@ -21,6 +21,7 @@ for (var i = 0; i < pacientes.length; i++) {
     console.log("Peso inválido");
     pesoEhValido = false;
     tdImc.textContent = "Peso inválido";
+    paciente.classList.add("paciente-invalido");
   }
 
   //Validacao altura
@@ -28,8 +29,9 @@ for (var i = 0; i < pacientes.length; i++) {
     console.log("Altura inválida");
     alturaEhValida = false;
     tdImc.textContent = "Altura inválida";
+    paciente.classList.add("paciente-invalido");
   }
-
+  //Calculo de IMC
   if (pesoEhValido && alturaEhValida) {
     var imc = peso / (altura * altura);
     tdImc.textContent = imc.toFixed(2);
