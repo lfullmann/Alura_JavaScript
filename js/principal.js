@@ -38,9 +38,7 @@ for (var i = 0; i < pacientes.length; i++) {
   }
 }
 
-// console.log(imc);
-// console.log(paciente);
-// // console.log(tdPeso);
-// // console.log(peso);
-// console.log(tdAltura);
-// console.log(altura);
+var botaoAdicionar = document.querySelector("#adicionar-paciente");
+botaoAdicionar.addEventListener("click", function () {
+  console.log("Botao clicado");
+});
