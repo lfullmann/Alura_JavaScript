@@ -136,7 +136,7 @@ button:disabled {
   background-color: lightcoral;
 }
 
-#mensagem-erro {
+#mensagens-erro {
   color: red;
   font-weight: bold;
 }
